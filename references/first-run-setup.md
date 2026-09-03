@@ -32,9 +32,8 @@
 
 ## 3. 一次性取得默认输入
 
-在一个简洁问题中取得并确认：
+在一个简洁问题中取得并确认可跨任务复用的信息：
 
-- 当前要处理的公司，可为单家公司或清单；
 - 目标届次或毕业年份；
 - 要检索的岗位方向和关键词；
 - 飞书个人投递台账链接，以及已知时的标题和底层类型；
@@ -48,9 +47,11 @@
 
 从[上下文模板](context-template.md)创建 Skill 根目录下的`context.md`，写入用户确认值、依赖状态和更新时间。若[补充信息库](supplemental-information.md)不存在，同时从[补充信息库模板](supplemental-information-template.md)创建空白本地文件。初始化全部完成后才把`初始化完成`设为`是`。
 
-`context.md`、`supplemental-information.md`和实际字段地图都已由`.gitignore`排除。不得把其中的个人路径、飞书链接、公司清单、求职偏好或申请事实复制到 README、模板、示例、提交信息或公开 Issue。
+`context.md`、`supplemental-information.md`和实际字段地图都已由`.gitignore`排除。不得把其中的个人路径、飞书链接、求职偏好或申请事实复制到 README、模板、示例、提交信息或公开 Issue。
 
 后续调用先读取上下文并复用。用户提供新值时只更新对应字段及更新时间；不要为了“确认一下”重复询问未发生变化的内容。
+
+公司不属于首次初始化或持久化字段。每次从用户当前请求中提取本次要处理的公司，例如“帮我投一下 XXX 公司的秋招”；不要把当前公司写入`context.md`供下次默认复用。
 
 ## 5. 生成 current-profile-field-map.md
 
