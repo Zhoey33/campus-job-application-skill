@@ -55,7 +55,7 @@ Skill 不会把第一志愿成功当作整组成功。出现新必填事实、�
 - Codex Desktop、Computer Use 和 Chrome；
 - 官方 [`lark-cli`](https://github.com/larksuite/cli) 及所需飞书 Skills；
 - Chrome 扩展[“来个简历”](https://cv.playoffer.cn/)；
-- 配套 Skill：`laige-resume-autofill`。
+- 配套 Skill：[laige-resume-autofill](https://github.com/Zhoey33/laige-resume-autofill-skill)。
 
 Skill 会检查这些依赖，并在需要时引导完成安装、登录和授权。
 
@@ -74,9 +74,10 @@ Skill 会检查这些依赖，并在需要时引导完成安装、登录和授�
 
 ```bash
 git clone https://github.com/Zhoey33/campus-job-application-skill.git ~/.codex/skills/campus-job-application-workflow
+git clone https://github.com/Zhoey33/laige-resume-autofill-skill.git ~/.codex/skills/laige-resume-autofill
 ```
 
-同时安装 `laige-resume-autofill`，然后重新启动 Codex 或刷新 Skills。
+两项安装完成后，重新启动 Codex 或刷新 Skills。
 
 ## 隐私与边界
 
