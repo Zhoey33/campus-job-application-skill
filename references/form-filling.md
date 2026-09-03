@@ -1,5 +1,7 @@
 # 网申表单填写与复核
 
+本阶段由岗位确认后单独新建的 Form Agent 执行。它只接收公司、登录与额度状态、已确认志愿顺序，以及每岗名称、职位 ID、地点和原始直达链接；不继承岗位 Search Agent 的长历史，也不重新执行岗位分类、关键词检索、翻页覆盖或岗位推荐。若申请页显示的企业、岗位、届次、地点或开放状态与交接包冲突，停止填写并把差异交回主 Agent，不自行重跑 Search 阶段。
+
 进入正式申请表时读取本参考，同时读取本地[`context.md`](../context.md)、存在时的[`current-profile-field-map.md`](current-profile-field-map.md)和[补充信息库](supplemental-information.md)，并加载`computer-use`与`$laige-resume-autofill`。
 
 ## 界面操作与插件分工
