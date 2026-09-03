@@ -1,0 +1,4 @@
+interface:
+  display_name: "校招简历投递全流程"
+  short_description: "完成岗位筛选、插件填表、附件复核并维护飞书投递台账"
+  default_prompt: "使用 $campus-job-application-workflow 完成这批校招岗位的官方检索、网申填写、提交前复核，并维护飞书投递台账。"
